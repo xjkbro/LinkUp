@@ -19,5 +19,5 @@ export default function Home() {
 }
 
 const Container = styled.div`
-    /* background-color: #006d77; */
+    background-color: #343a40;
 `;
