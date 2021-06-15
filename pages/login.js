@@ -2,6 +2,7 @@ import { Button } from "@material-ui/core";
 import Head from "next/head";
 import styled from "styled-components";
 import { auth, provider } from "../firebase";
+
 function Login() {
     const signIn = () => {
         auth.signInWithPopup(provider).catch(alert);
@@ -12,7 +13,10 @@ function Login() {
                 <title>LinkUP | Login</title>
             </Head>
             <LoginContainer>
-                <Logo src="./LinkUP.png" />
+                <Logo
+                    src="https://i.ibb.co/dbS5CXz/LinkUP.png"
+                    alt="https://ibb.co/N1XyDfH"
+                />
                 <Button onClick={signIn} variant="outlined">
                     Sign In with Google
                 </Button>
