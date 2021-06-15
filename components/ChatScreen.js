@@ -144,14 +144,15 @@ export default ChatScreen;
 const Container = styled.div``;
 const Header = styled.div`
     position: sticky;
-    background-color: white;
+    background-color: #495057;
     z-index: 100;
     top: 0;
     display: flex;
     padding: 11px;
     height: 80px;
     align-items: center;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #495057;
+    /* box-shadow: 1px 1px 15px #006d77; */
 `;
 const HeaderInformation = styled.div`
     margin-left: 16px;
@@ -160,16 +161,21 @@ const HeaderInformation = styled.div`
         margin-top: 15px;
         margin-bottom: 3px;
         font-weight: 600;
+        color: #f8f9fa;
     }
     > p {
         font-size: 14px;
-        color: gray;
+        color: #dee2e6;
     }
 `;
-const HeaderIcons = styled.div``;
+const HeaderIcons = styled.div`
+    > button {
+        color: #f8f9fa;
+    }
+`;
 const MessageContainer = styled.div`
     padding: 30px;
-    background-color: #e5ded8;
+    background-color: #6c757d;
     min-height: 90vh;
 `;
 const EndOfMessage = styled.div`
@@ -181,17 +187,20 @@ const InputContainer = styled.form`
     padding: 10px;
     position: sticky;
     bottom: 0;
-    background-color: white;
+    background-color: #495057;
     z-index: 100;
+
+    color: #f8f9fa;
 `;
 const Input = styled.input`
     flex: 1;
     outline: 0;
     border: none;
     border-radius: 10px;
-    background-color: whitesmoke;
     padding: 20px;
     margin-left: 15px;
     margin-right: 15px;
     z-index: 100;
+    background-color: #6c757d;
+    color: #f8f9fa;
 `;

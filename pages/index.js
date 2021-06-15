@@ -1,9 +1,10 @@
 import Head from "next/head";
+import styled from "styled-components";
 import Sidebar from "../components/Sidebar";
 
 export default function Home() {
     return (
-        <div>
+        <Container>
             <Head>
                 <title>LinkUP</title>
                 <meta
@@ -13,6 +14,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Sidebar />
-        </div>
+        </Container>
     );
 }
+
+const Container = styled.div`
+    /* background-color: #006d77; */
+`;

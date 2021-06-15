@@ -33,15 +33,16 @@ const MessageElement = styled.p`
     padding-bottom: 26px;
     position: relative;
     text-align: right;
+    color: #212529;
 `;
 
 const Sender = styled(MessageElement)`
     margin-left: auto;
-    background-color: beige;
+    background-color: #ced4da;
 `;
 
 const Receiver = styled(MessageElement)`
-    background-color: whitesmoke;
+    background-color: #e9ecef;
     text-align: left;
 `;
 const Timestamp = styled.span`

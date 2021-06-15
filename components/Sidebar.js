@@ -79,7 +79,7 @@ export default Sidebar;
 
 const Container = styled.div`
     flex: 0.45;
-    border-right: 1px solid whitesmoke;
+    border-right: 1px solid #343a40;
     height: 100vh;
     min-width: 300px;
     max-width: 350px;
@@ -89,19 +89,20 @@ const Container = styled.div`
     }
     -ms-overflow-style: none;
     scrollbar-width: none;
+    background-color: #343a40;
 `;
 
 const Header = styled.div`
     display: flex;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #343a40;
     z-index: 1;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     height: 80px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #343a40;
 `;
 const UserAvatar = styled(Avatar)`
     cursor: pointer;
@@ -112,22 +113,41 @@ const UserAvatar = styled(Avatar)`
 const DisplayName = styled.span`
     font-size: 20px;
 `;
-const IconsContainer = styled.div``;
+const IconsContainer = styled.div`
+    > button {
+        color: #f8f9fa;
+    }
+`;
 const Search = styled.div`
     display: flex;
     align-items: center;
     padding: 5px;
     border-radius: 2px;
+    background-color: #343a40;
+    color: #f8f9fa;
 `;
 const SearchInput = styled.input`
     outline-width: 0;
     border: none;
     flex: 1;
+    background-color: #343a40;
+    color: #f8f9fa;
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #f8f9fa;
+    }
 `;
 const SidebarButton = styled(Button)`
     width: 100%;
+
     &&& {
-        border-top: 1px solid whitesmoke;
-        border-bottom: 1px solid whitesmoke;
+        border-top: 1px solid #343a40;
+        border-bottom: 1px solid #343a40;
+        background-color: #343a40;
+        color: #f8f9fa;
+        :hover {
+            opacity: 0.8;
+            background-color: #495057;
+        }
     }
 `;
